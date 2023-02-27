@@ -7,13 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js"></script>
+    <!-- <script src="js/updatedScript.js"></script> -->
     <title>KeepApp - Your personal note keeper</title>
 </head>
 <!-- When the document loads the existing notes should be fetched -->
@@ -75,24 +73,24 @@
                           </div>
                           <!-- The color picker -->
                           <label for="exampleColorInput" class="form-label">Color picker</label>
-                          <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
-                          <div class="container mt-4 buttonPadding">
-                            <button type="submit" class="btn btn-primary" id="adNotesBtn" onclick="addNotesDisplay()">Add Notes</button>
-                            <button type="button" class="btn btn-warning" id="showNotesBtn" onclick="showNotes()">Show Notes</button>
-                            <button type="button" class="btn btn-success" id="hideNotesBtn" onclick="hideNotes()">Hide Notes</button>                            
-                          </div>
+                          <input  style=" margin-bottom: 11px;" type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                          <!-- <div class="container-fluid mt-4 buttonPadding">
+                           
+                          </div> -->
+                           <button  type="submit" class="buttonCss btn btn-primary buttonitem btn-sm" id="adNotesBtn" onclick="addNotesDisplay()">Add Notes</button>
+                            <button type="button" class="buttonCss btn btn-warning buttonitem btn-sm" id="showNotesBtn" onclick="showNotes()">Show Notes</button>
+                            <button type="button" class="buttonCss btn btn-success buttonitem btn-sm" id="hideNotesBtn" onclick="hideNotes()">Hide Notes</button>                            
                         </form>
-                        <form class="container d-flex justify-content-start" onsubmit="deleteBox(event)">
+                        <form class="container row justify-content-start" onsubmit="deleteBox(event)">
                             <div class="form-group">
-                              <input type="number" class="form-control" id="box-index" placeholder="Card Number Here">
+                              <input type="number" style="margin-top: 15px; margin-bottom: 10px;" class=" form-control" id="box-index" placeholder="Card Number Here">
                             </div>
-                            <button type="submit" class="btn btn-success">Delete</button>
+                            <button type="submit"  class="buttonCss btn btn-success btn-sm">Delete</button>
                         </form>
                       </div>
                     </div>
             </div>
-        </div>
-    </div>
+ 
 
     <!-- note view panel -->
     <div id="note-container" class="container ">
