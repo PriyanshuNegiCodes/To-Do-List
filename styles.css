@@ -1,11 +1,12 @@
 #note-input-panel{
-    width: 80vw;
+    width: 50vw;
     margin: auto;
     margin-top: 30px;
 }
-button{
- width: 106px;
+.collapse{
+    width: auto;
 }
+
 #note-container{
     /* margin: auto; */
     margin-top: 30px;
@@ -13,8 +14,10 @@ button{
     flex-wrap: wrap;
     /* justify-content: space-around; */
 }
-.buttonPadding{
-    padding-left: 0px;
+.buttonitem{
+    width: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .buttonPadding button{
     margin-right: 10px;
