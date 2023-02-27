@@ -1,3 +1,5 @@
+
+
 #note-input-panel{
     width: 50vw;
     margin: auto;
@@ -14,16 +16,16 @@
     flex-wrap: wrap;
     /* justify-content: space-around; */
 }
-.buttonitem{
+/* .buttonitem{
     width: 100px;
     margin-top: 10px;
     margin-bottom: 10px;
-}
-.buttonPadding button{
+} */
+/* .buttonPadding button{
     margin-right: 10px;
     width: 160px;
     margin-bottom: 8px;
-}
+} */
 .card a{
    align-content: center;
 }
@@ -37,4 +39,8 @@
     margin-top: 8px;
     margin-left: 50px;
     margin-bottom: 30px;
+  }
+
+  .buttonCss{
+    width: 53px!important;
   }
