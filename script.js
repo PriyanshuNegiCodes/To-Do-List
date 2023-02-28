@@ -28,6 +28,7 @@ function createCard(notesList) {
     let counter=0;
   // Get the note container element
   const noteContainer = document.querySelector('#note-container');
+  
 
   // Clear the note container element to prevent the appending of the other note
   noteContainer.innerHTML = '';
@@ -35,9 +36,15 @@ function createCard(notesList) {
   // Loop through the notesList array and create a card for each note
   notesList.forEach(note => {
       // Create a new card element
+      const outerDiv=document.createElement("div");
+      outerDiv.style.margin="10px";
+    
       const card = document.createElement('div');
+      card.style.paddingLeft="0px";
       card.classList.add('card');
-      card.style.width = '14rem';
+      card.style.width = '11rem';
+      
+      card.style.margin="auto";  
     
       // Create card body
       const cardBody = document.createElement('div');
@@ -83,7 +90,8 @@ function createCard(notesList) {
       card.style.backgroundColor = note.color;
 
       // Combine card to the note container
-      noteContainer.appendChild(card);
+      outerDiv.appendChild(card);
+      noteContainer.appendChild(outerDiv);
 
       // Add event listener to delete button
       deleteCard(card, DeleteButton, card.id);
