@@ -11,7 +11,7 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
-    <!-- <script src="updatedScript.js"></script> -->
+    <!-- <script src="js/updatedScript.js"></script> -->
     <title>KeepApp - Your personal note keeper</title>
 </head>
 <!-- When the document loads the existing notes should be fetched -->
@@ -77,15 +77,27 @@
                           <!-- <div class="container-fluid mt-4 buttonPadding">
                            
                           </div> -->
-                           <button  type="submit" class="buttonCss btn btn-primary buttonitem btn-sm" id="adNotesBtn" onclick="addNotesDisplay()">Add Notes</button>
-                            <button type="button" class="buttonCss btn btn-warning buttonitem btn-sm" id="showNotesBtn" onclick="showNotes()">Show Notes</button>
-                            <button type="button" class="buttonCss btn btn-success buttonitem btn-sm" id="hideNotesBtn" onclick="hideNotes()">Hide Notes</button>                            
+                            <div class="d-grid gap-2 d-md-block" style="margin-bottom: 10px;">
+                                <button  type="submit" class="btn btn-primary" id="adNotesBtn" onclick="addNotesDisplay()">Add Notes</button>
+                            </div>
+                            <div class="d-grid gap-2 d-md-block" style="margin-bottom: 10px;">
+                            <button type="button" class="btn btn-warning " id="showNotesBtn" onclick="showNotes()">Show Notes</button>
+                            </div>
+                            <div class="d-grid gap-2 d-md-block" style="margin-bottom: 10px;">
+                                <button type="button" class="btn-success btn-outline-info " id="hideNotesBtn" onclick="hideNotes()">Hide Notes</button>
+                            </div>                            
                         </form>
                         <form class="container row justify-content-start" onsubmit="deleteBox(event)">
-                            <div class="form-group">
-                              <input type="number" style="margin-top: 15px; margin-bottom: 10px;" class=" form-control" id="box-index" placeholder="Card Number Here">
+                            <div class="form-group" style="padding-left: 0px;;">
+                                <!-- <input type="text" class="form-control" id="titleId" placeholder="Your Title Here" required> -->
+                                <div style="margin-top: 15px; margin-bottom: 10px;" class="col-md-4">
+                                    <input type="number"  class=" form-control" id="box-index" placeholder="Card Number Here">  
+                                </div>
+                                <div class="d-grid gap-2 d-md-block">
+                                <button type="submit"  class=" btn btn-success"  >Delete</button>
+                                </div>
                             </div>
-                            <button type="submit"  class="buttonCss btn btn-success btn-sm">Delete</button>
+                            
                         </form>
                       </div>
                     </div>
@@ -93,7 +105,7 @@
  
 
     <!-- note view panel -->
-    <div id="note-container" class="container ">
+    <div id="note-container" class="container m-auto" style="margin-left: 10px;" >
         
     </div>
 
