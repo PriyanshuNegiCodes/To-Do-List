@@ -173,3 +173,4 @@ document.addEventListener("DOMContentLoaded", function() {
         noteCard.style.backgroundColor=colorPicker.value;
     });
 });
+
